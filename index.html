@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- 22 22 --> 
 
 <html lang="uk">
   <head>
@@ -22,13 +23,14 @@
   <body>
     <header class="header-studio">
       <div class="container header-container">
-        <nav class="header-container">
+                                           <nav class="header-container">
           <a class="logo" href="./index.html">
-            <span class="logo-blue"> Web</span>Studio</a
+            <span class="logo--blue"> Web</span>Studio</a
           >
+
           <ul class="navigation list header-nav">
             <li>
-              <a class="navigation-item logo-blue nav-active" href="./index.html">
+              <a class="navigation-item logo--blue nav-active" href="./index.html">
                 Студия</a
               >
             </li>
@@ -63,11 +65,10 @@
     
         <section class="hero">
           <div class="container">
-            <h1 class="header">Ефективні рішення для вашого бізнесу</h1>
+            <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
             <button class="button-serv" data-modal-open type="button">Замовити послугу</button>
          
             <!-- modal window -->
-
 
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
@@ -104,8 +105,7 @@
               </svg>
       </div>
       
-    
-      <label for="comment" class="form-label">Коментар</label>
+       <label for="comment" class="form-label">Коментар</label>
       <textarea name="comment" id="comment" class=" textarea" cols="72" rows="10" placeholder="Введіть текст"></textarea>
     
       <label class="conditions">
@@ -119,15 +119,9 @@
      
      <button type="submit" class="button-serv"> Відправити</button>
     </form>
-
             </div>
-   </div>
-
-
-              
-  
-
-        </section>
+        </div>   
+      </section>
    
       <section class="section">
         <div class="container">
@@ -194,13 +188,13 @@
           </ul>
         </div>
       </section>
+
       <section class="section work">
         <div class="container">
           <h2 class="title-why">Чим ми займаємося</h2>
+                    <ul class="why-list list">
           
-          <ul class="why-list list">
-          
-            <li >
+                      <li>
       <div class="why-item">
               <img
                 src="./images/leftpicture.jpg"
@@ -211,6 +205,7 @@
               <div class="why-text">десктопні додатки</div>
             </div>
             </li>
+
             <li class="">
               <div class="why-item">
               <img
@@ -235,20 +230,23 @@
           </ul>
         </div>
       </section>
+
+                            <!-- OUR TEAM -->
+
       <section class="team section">
         <div class="container">
           <h2 class="title-why">Наша команда</h2>
-          <ul class="team-list list">
-            <li class="team-item">
+          <ul class="team__list list">
+            <li class="team__item">
               <img
                 src="./images/demyan.jpg"
                 alt="Ігор Дем'яненко"
                 width="270"
                 height="260"
               />
-              <div class="team-card">
-                <h3 class="team-name">Ігор Дем'яненко</h3>
-                <p class="team-prof" lang="en">Product Designer</p>
+              <div class="team__card">
+                <h3 class="team__name">Ігор Дем'яненко</h3>
+                <p class="team__prof" lang="en">Product Designer</p>
               
               <ul class="list social-links">
           <li class="contacts-link team-icon">
@@ -281,16 +279,16 @@
           </li>
         </ul></div>
             </li>
-            <li class="team-item">
+            <li class="team__item">
               <img
                 src="./images/repina.jpg"
                 alt="Ольга Рєпіна"
                 width="270"
                 height="260"
               />
-              <div class="team-card">
-                <h3 class="team-name">Ольга Рєпіна</h3>
-                <p class="team-prof" lang="en">Frontend Developer</p>
+              <div class="team__card">
+                <h3 class="team__name">Ольга Рєпіна</h3>
+                <p class="team__prof" lang="en">Frontend Developer</p>
               
               <ul class="list social-links ">
           <li class="contacts-link team-icon">
@@ -323,16 +321,16 @@
           </li>
         </ul></div>
             </li>
-            <li class="team-item">
+            <li class="team__item">
               <img
                 src="./images/tarasov.jpg"
                 alt="Микола Тарасов"
                 width="270"
                 height="260"
               />
-              <div class="team-card">
-                <h3 class="team-name">Микола Тарасов</h3>
-                <p class="team-prof" lang="en">Marketing</p>
+              <div class="team__card">
+                <h3 class="team__name">Микола Тарасов</h3>
+                <p class="team__prof" lang="en">Marketing</p>
               
               <ul class="list social-links ">
           <li class="contacts-link team-icon">
@@ -365,16 +363,16 @@
           </li>
         </ul></div>
             </li>
-            <li class="team-item">
+            <li class="team__item">
               <img
                 src="./images/ermakov.jpg"
                 alt="Михайло Єрмаков"
                 width="270"
                 height="260"
               />
-              <div class="team-card">
-                <h3 class="team-name">Михайло Єрмаков</h3>
-                <p class="team-prof" lang="en">UI Designer</p>
+              <div class="team__card">
+                <h3 class="team__name">Михайло Єрмаков</h3>
+                <p class="team__prof" lang="en">UI Designer</p>
              
               <ul class="list social-links ">
           <li class="contacts-link team-icon">
@@ -469,7 +467,7 @@
         
           <div class="addr">
           <a class="logo logo-footer" href="./index.html">
-            <span class="logo-blue"> Web</span>Studio</a
+            <span class="logo--blue"> Web</span>Studio</a
           >
           <address class="foot-address">
             <ul class="list">
@@ -545,6 +543,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
-     <!-- 00:42 -->
+     <!-- 23:42 20.09.2022 -->
   </body>
 </html>
