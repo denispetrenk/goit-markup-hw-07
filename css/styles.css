@@ -79,6 +79,7 @@ img {
 .header-studio {
   border-bottom: 1px solid #ececec;
 }
+/*  */
 .header-nav {
   display: flex;
   align-items: center;
@@ -101,7 +102,7 @@ img {
   display: inline-block;
   margin-right: 93px;
 }
-
+/* ? */
 .header {
   width: 696px;
   color: var(--background-color);
@@ -113,14 +114,6 @@ img {
   text-transform: uppercase;
 }
 
-.mat-color {
-  line-height: 1.71;
-  text-decoration: none;
-  color: var(--address-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 .navigation-item {
   display: block;
   color: var(--maintext-color);
@@ -189,9 +182,6 @@ img {
   margin-left: 50px;
 }
 
-.team-social {
-  /*  margin-bottom: 16px;*/
-}
 .navigation-item:hover,
 .navigation-item:focus {
   color: var(--accent-color);
@@ -202,42 +192,9 @@ img {
   color: var(--accent-color);
 }
 
-.contacts-vec {
+/* .contacts-vec {
   color: #000000;
-}
-.filter {
-  display: flex;
-  justify-content: center;
-
-  margin-bottom: 50px;
-  gap: 8px;
-}
-.filter-item {
-  /*кнопки фильтра портфолио*/
-  padding: 6px 22px;
-  border: 0;
-  background-color: var(--second-background-color);
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: inherit;
-  line-height: calc(26 / 16);
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: var(--maintext-color);
-  cursor: pointer;
-  transition-property: background-color, color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
-}
-
-.filter-item:hover,
-.filter-item:focus {
-  background-color: var(--accent-color);
-  color: var(--background-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+} */
 
 /* HERO */
 
@@ -532,11 +489,6 @@ textarea:hover {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.img-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
 
 /* Features */
 
@@ -603,9 +555,9 @@ textarea:hover {
 
 /* WHY WE  */
 
-.work {
+/* .work {
   padding-top: 0;
-}
+} */
 
 .why__title {
   font-size: 36px;
@@ -683,28 +635,20 @@ textarea:hover {
   gap: 30px;
 }
 
-.team__list {
-  display: flex;
-  gap: 30px;
-}
-
 .why-list:first-child,
 .team__list:first-child {
   margin-left: 0;
-}
-
-.text {
-  /*текст в проектах портфолио*/
-  font-family: inherit;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  color: var(--paragraph-color);
 }
 
 /* OUR TEAM */
 
 .team {
   background-color: var(--second-background-color);
+}
+
+.team__list {
+  display: flex;
+  gap: 30px;
 }
 
 .team__item {
@@ -732,54 +676,6 @@ textarea:hover {
 
 .team__prof {
   text-align: center;
-}
-
-.card-set {
-  /* background-color: var(--group-color);*/
-}
-/*.card-set:hover,
-.card-set:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}*/
-
-.card-item {
-  padding: 20px 24px;
-  border: 1px solid var(--group-color);
-  border-top: none;
-}
-.card-set-thumb {
-  position: relative;
-  overflow: hidden;
-}
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--overlay-color);
-  width: 100%;
-  height: 100%;
-  padding: 63px 24px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-property: transform;
-  transform: translateY(100%);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.overlay-descr {
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.03em;
-  color: var(--background-color);
-}
-
-.card-link:hover .overlay,
-.card-link:focus .overlay {
-  transform: translateY(0);
-}
-.team-prof {
   font-family: inherit;
   font-size: 16px;
   font-weight: 400;
@@ -787,21 +683,6 @@ textarea:hover {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--paragraph-color);
-}
-.socials__link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: var(--paragraph-color);
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
-}
-.socials__link:hover,
-.socials__link:focus {
-  color: var(--background-color);
-  background-color: var(--accent-color);
 }
 
 .team__icon a {
@@ -813,6 +694,114 @@ textarea:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* ----------PORTFOLIO----------------- */
+.img-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 8px;
+}
+
+.filter-item {
+  /*кнопки фильтра портфолио*/
+  padding: 6px 22px;
+  border: 0;
+  background-color: var(--second-background-color);
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--maintext-color);
+  cursor: pointer;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+
+.filter-item:hover,
+.filter-item:focus {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card-link {
+  display: block;
+  transition-property: background-color, color, box-sadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+
+.card-link:hover,
+.card-link:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-item {
+  padding: 20px 24px;
+  border: 1px solid var(--group-color);
+  border-top: none;
+}
+
+.card-set-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.text {
+  /*текст в проектах портфолио*/
+  font-family: inherit;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  color: var(--paragraph-color);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--overlay-color);
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: transform;
+  transform: translateY(100%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay-descr {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--background-color);
+}
+
+.card-link:hover .overlay,
+.card-link:focus .overlay {
+  transform: translateY(0);
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
 }
 
 .clients-item {
@@ -850,6 +839,14 @@ textarea:hover {
 .clients-item .social-item:focus {
   fill: var(--accent-color);
 } */
+.mat-color {
+  line-height: 1.71;
+  text-decoration: none;
+  color: var(--address-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .foot-address {
   font-style: normal;
   margin-top: 20px;
@@ -920,20 +917,7 @@ textarea:hover {
   margin-left: 70px;
   margin-right: auto;
 }
-.socials__icon {
-  fill: currentColor;
-}
-.card-link {
-  display: block;
-  transition-property: background-color, color, box-sadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
-}
-.card-link:hover,
-.card-link:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+
 .socials {
   display: flex;
   justify-content: center;
@@ -941,12 +925,27 @@ textarea:hover {
   margin-top: 16px;
 }
 
-.clients-list {
+.socials__link {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: 30px;
+  text-decoration: none;
+  color: var(--paragraph-color);
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
+
+.socials__link:hover,
+.socials__link:focus {
+  color: var(--background-color);
+  background-color: var(--accent-color);
+}
+
+.socials__icon {
+  fill: currentColor;
+}
+
 .foot .container {
   display: flex;
   align-items: baseline;
