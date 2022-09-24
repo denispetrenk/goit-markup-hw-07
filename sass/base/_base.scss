@@ -1,8 +1,8 @@
 body {
   /**основные**/
-  background-color: var(--background-color);
-  color: var(--maintext-color);
-  font-family: var(--main-font);
+  background-color: $background-color;
+  color: $maintext-color;
+  font-family: $main-font;
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -27,4 +27,9 @@ img {
 }
 .address {
   font-style: normal;
+}
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }

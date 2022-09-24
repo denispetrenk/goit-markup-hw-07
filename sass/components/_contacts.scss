@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: var(--paragraph-color);
+  color: $paragraph-color;
   font-weight: 500;
   font-size: 1t4px;
   line-height: calc(16 / 14);
@@ -23,7 +23,7 @@
   }
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 

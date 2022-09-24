@@ -15,8 +15,8 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: var(--why-bg-color);
-  color: var(--background-color);
+  background-color: $why-bg-color;
+  color: $background-color;
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
@@ -33,7 +33,7 @@
   font-weight: 700;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
-  color: var(--maintext-color);
+  color: $maintext-color;
 }
 .title-char {
   /*заголовок характеристик в студия*/
@@ -56,7 +56,7 @@
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   text-align: left;
-  color: var(--paragraph-color);
+  color: $paragraph-color;
 }
 .section__title {
   /*заголовок чем мы занимаемя( и наша команда) в студия*/

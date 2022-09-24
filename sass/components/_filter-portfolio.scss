@@ -9,7 +9,7 @@
   /*кнопки фильтра портфолио*/
   padding: 6px 22px;
   border: 0;
-  background-color: var(--second-background-color);
+  background-color: $second-background-color;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 500;
@@ -17,7 +17,7 @@
   line-height: calc(26 / 16);
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--maintext-color);
+  color: $maintext-color;
   cursor: pointer;
   transition-property: background-color, color, box-shadow;
   transition-duration: 250ms;
@@ -27,7 +27,7 @@
 
 .filter-item:hover,
 .filter-item:focus {
-  background-color: var(--accent-color);
-  color: var(--background-color);
+  background-color: $accent-color;
+  color: $background-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

@@ -10,7 +10,7 @@
 }
 .navigation-item {
   display: block;
-  color: var(--maintext-color);
+  color: $maintext-color;
   text-decoration: none;
   padding: 32px 0;
   font-size: 14px;
@@ -26,7 +26,7 @@
   }
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 .nav-active {
@@ -35,7 +35,7 @@
   &:after {
     content: '';
     position: absolute;
-    border-bottom: 4px solid var(--accent-color);
+    border-bottom: 4px solid $accent-color;
     left: 0;
     bottom: -1px;
     width: 100%;
